@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  cartoon_app:
+    # build: .
+    image: ngovanhuy0241/image_cartooning_web_app_cartoon_app:latest
+    ports:
+      - 8051:8051
+    volumes:
+      - ./cartoon_app.py:/appdir/cartoon_app.py
+    networks:
+      - webnet
+networks:
+  webnet:

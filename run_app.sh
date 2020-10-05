@@ -1,0 +1,1 @@
+streamlit run cartoon_app.py
